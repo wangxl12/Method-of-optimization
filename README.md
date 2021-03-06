@@ -5,11 +5,11 @@
 
 <font size=4 face="楷体">黄金分割算法演示示图：</font>
 
-![0.618算法](./imgs/0.618算法（黄金分割）.png #pic_center)
+![0.618算法](./imgs/0.618算法（黄金分割）.png)
 
 <font size=4 face="楷体">成功失败算法演示示图：</font>
 
-![成功失败法](./imgs/成功-失败法.png #pic_center)
+![成功失败法](./imgs/成功-失败法.png)
 
 <font size=4 face="楷体">鲍威尔算法演示示图：</font>
 
