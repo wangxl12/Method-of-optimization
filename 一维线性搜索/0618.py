@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from Functions import fun1
 
+def fun(x):
+    return x**3 - 2*x + 1
 
 def display(fun, x0=6, a=-1, b=6, delta=0.001):
     X = np.linspace(a, b, 100)
@@ -41,5 +43,5 @@ def display(fun, x0=6, a=-1, b=6, delta=0.001):
     return times, x
 
 if __name__ == "__main__":
-    times, x = display(fun1)
+    times, x = display(fun, a=0, b=2, delta=0.002)
     print("迭代次数为:{:}, 极小值点为:{:}".format(times, x))

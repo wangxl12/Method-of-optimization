@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 from 求导 import first_derivative, second_derivative
 from Functions import fun1
 
+def fun(x):
+    return x**3 - 2*x + 1
+
 
 def display(fun, x0=6, a=-1, b=6, delta=0.001):
     ax = plt.gca()
@@ -22,5 +25,5 @@ def display(fun, x0=6, a=-1, b=6, delta=0.001):
 
 
 if __name__ == "__main__":
-    times, x = display(fun1)
+    times, x = display(fun, x0=6, a=-1, b=6, delta=0.001)
     print("迭代次数为:{:}, 极小值点为:{:}".format(times, x))

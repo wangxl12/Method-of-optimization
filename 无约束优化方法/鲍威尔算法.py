@@ -4,6 +4,9 @@ from tools import FirstDerivative, SecondDerivative, GetA, GetInverseMatrix, Get
 from functions import fun2, fun1, fun3, fun4, fun5, fun6, fun7, fun8
 
 
+def fun(x1, x2):
+    return 10*(x1+x2-5)**2 + (x1-x2)**2
+    
 def judge_a(a):
     if a is None:
         print("无非负实数步长值！请修改X0的初始值")
@@ -116,4 +119,4 @@ def display(x_range, y_range, function, X0=None, delta=0.01):
 
 
 if __name__ == "__main__":
-    display((-5, 10), (-5, 7), fun2, X0=[-5, 4]) # fun4
+    display((-5, 10), (-5, 7), fun, X0=[-5, 4]) # fun4

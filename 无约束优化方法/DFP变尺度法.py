@@ -18,7 +18,9 @@ def GetStructureMatrix(delta_grad, delta_x, A):
               np.matmul(np.matmul(GetTransposeMatrix(delta_grad), A), delta_grad)
     return delta_A
 
-
+def fun(x1, x2):
+    return x1 ** 2 + 2 * x2**2 - 4 * x1 - 2 * x1 * x2
+    
 def display(x_range, y_range, function, X0=None, delta=0.01):
     if X0 is None:
         X0 = [5, 5]
@@ -117,4 +119,4 @@ def display(x_range, y_range, function, X0=None, delta=0.01):
 
 
 if __name__ == "__main__":
-    display((-5, 10), (-5, 7), fun1, X0=[-5, 4])  # fun5,fun4
+    display((-5, 10), (-5, 7), fun, X0=[-5, 4])  # fun5,fun4

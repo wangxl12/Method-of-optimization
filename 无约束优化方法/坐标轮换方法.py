@@ -4,6 +4,9 @@ from tools import FirstDerivative, SecondDerivative, GetA, GetInverseMatrix
 from functions import fun2, fun1, fun3, fun4, fun5, fun6, fun7, fun8
 
 
+def fun(x1, x2):
+    return 4*(x1-5)**2 + (x2-6)**2
+    
 def display(x_range, y_range, function, X0=None, delta=0.01):
     if X0 is None:
         X0 = [5, 5]
@@ -78,4 +81,4 @@ def display(x_range, y_range, function, X0=None, delta=0.01):
 
 
 if __name__ == "__main__":
-    display((-5, 5), (-5, 5), fun3, X0=[-5, 4])  # fun4
+    display((-5, 8), (-3, 10), fun, X0=[-5, 4])  # fun4

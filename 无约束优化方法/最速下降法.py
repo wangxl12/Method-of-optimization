@@ -4,6 +4,8 @@ from tools import FirstDerivative, SecondDerivative, GetA, GetInverseMatrix
 from functions import fun2, fun1, fun3, fun4, fun5, fun6, fun7, fun8
 import sympy as sy
 
+def fun(x1, x2):
+    return x1**2 + x2**2
 
 def display(x_range, y_range, function, X0=None, delta=0.01):
     if X0 is None:
@@ -84,7 +86,7 @@ def display(x_range, y_range, function, X0=None, delta=0.01):
 
 
 if __name__ == "__main__":
-    display((-5, 10), (-5, 7), fun3, X0=[-5, 4])  # fun4, fun5
+    display((-5, 10), (-5, 7), fun, X0=[2, 2])  # fun4, fun5
 # import tkinter as tk
 #
 # window = tk.Tk()

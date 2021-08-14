@@ -3,7 +3,9 @@ import numpy as np
 from tools import FirstDerivative, SecondDerivative, GetA, GetInverseMatrix, GetMagnitude
 from functions import fun2, fun1, fun3, fun4, fun5, fun6, fun7, fun8
 
-
+def fun(x1, x2):
+    return x1**2 + 2 * x2 ** 2 - 4 * x1 - 2 * x1 * x2
+    
 def display(x_range, y_range, function, X0=None, delta=0.01):
     if X0 is None:
         X0 = [5, 5]
@@ -93,4 +95,4 @@ def display(x_range, y_range, function, X0=None, delta=0.01):
 
 
 if __name__ == "__main__":
-    display((-5, 6), (-5, 7), fun7, X0=[-5, 4])  # fun4, fun5
+    display((-5, 6), (-5, 7), fun, X0=[-5, 4])  # fun4, fun5
